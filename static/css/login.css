@@ -1,0 +1,103 @@
+/* login.css */
+
+/* Fondo oscuro con textura */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: url('../img/bonfirelit.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #eee;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    overflow: hidden; /* Evita el scroll */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Capa de color oscuro con opacidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: rgba(20, 20, 20, 0.8); /* Fondo de la caja de login */
+    border: 2px solid #555; /* Borde con color metálico */
+    border-radius: 10px;
+    padding: 2rem;
+    width: 350px; /* Aumenta el ancho de la caja */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.login-box h1 {
+    margin: 0 0 1.5rem;
+    font-size: 2rem;
+    color: #ddd;
+    font-family: 'Times New Roman', serif;
+}
+
+.textbox {
+    margin-bottom: 1rem;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background: #333;
+    color: #eee;
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+}
+
+.textbox input:focus {
+    outline: none;
+    border-color: #888;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: #eee;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+.flash-messages {
+    margin-top: 1rem;
+}
+
+.flash {
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.flash.success {
+    background: #4caf50;
+}
+
+.flash.error {
+    background: #f44336;
+}
+
+audio {
+    display: none;
+}

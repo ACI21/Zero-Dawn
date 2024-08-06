@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+body {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  color: white;
+  background-image: url("../img/My_Nintendo_Summer_Wallpaper_Mario_and_Yoshi_1920x1080.jpg");
+}
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  padding: 20px;
+  font-size: 40px;
+}
+.countdown-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+.countdown-container span {
+  display: block;
+  font-size: 20px;
+  color: white;
+}
+#days {
+  font-size: 200px;
+  color: #db4844;
+}
+#hours {
+  font-size: 150px;
+  color: #f07c22;
+}
+#minutes {
+  font-size: 100px;
+  color: #f6da74;
+}
+#seconds {
+  font-size: 50px;
+  color: #abcd58;
+}

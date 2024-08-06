@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Regresiva</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contador.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="countdown-container">
+        <div id="days">
+            <span>Días</span>
+        </div>
+        <div id="hours">
+            <span>Horas</span>
+        </div>
+        <div id="minutes">
+            <span>Minutos</span>
+        </div>
+        <div id="seconds">
+            <span>Segundos</span>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts/countdown.js') }}"></script>
+    <audio id="background-audio" autoplay loop>
+        <source src="{{ url_for('static', filename='audio/mario-bros.mp3') }}" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</body>
+</html>
