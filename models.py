@@ -26,12 +26,14 @@ class Caja(db.Base):
     descripcion = Column(String(255), unique=True, nullable=False)
     pista = Column(String(255), nullable=False)
     intentos = Column(Integer, nullable=False, default=0)
+    password = Column(String(255), nullable=False)
 
-    def __init__(self, nombre, descripcion, pista, intentos=0):
+    def __init__(self, nombre, descripcion, pista, intentos, password):
         self.nombre = nombre
         self.descripcion = descripcion
         self.pista = pista
         self.intentos = intentos
+        self.password = password
 
     def __repr__(self):
         return "Caja {}: {}".format(self.id, self.nombre)
