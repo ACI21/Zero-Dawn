@@ -10,7 +10,8 @@ CREATE TABLE caja (
     descripcion VARCHAR(255) NOT NULL UNIQUE,
     pista VARCHAR(255) NOT NULL,
     intentos INTEGER(2),
-    password VARCHAR(255) NOT NULL
+    contrasenya VARCHAR(255) NOT NULL,
+    abierta BOOLEAN DEFAULT 0
 );
 
 INSERT INTO usuario (username, password) VALUES('Ruthy','Imagine Dragons');

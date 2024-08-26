@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Boolean
 import db
 
 class Usuario(db.Base):
@@ -23,20 +23,21 @@ class Caja(db.Base):
 
     id = Column(Integer, primary_key=True)
     nombre = Column(String(255), unique=True, nullable=False)
-    descripcion = Column(String(255), unique=True, nullable=False)
+    descripcion = Column(String(255), nullable=False)
     pista = Column(String(255), nullable=False)
     intentos = Column(Integer, nullable=False, default=0)
-    password = Column(String(255), nullable=False)
+    contrasenya = Column(String(255), nullable=False)
+    abierta = Column(Boolean, default=False)  # Nuevo campo
 
-    def __init__(self, nombre, descripcion, pista, intentos, password):
+    def __init__(self, nombre, descripcion, pista, intentos, contrasenya, abierta=False):
         self.nombre = nombre
         self.descripcion = descripcion
         self.pista = pista
         self.intentos = intentos
-        self.password = password
+        self.contrasenya = contrasenya
+        self.abierta = abierta  # Inicializar con False
 
     def __repr__(self):
         return "Caja {}: {}".format(self.id, self.nombre)
-
-    def __str__(self):
-        return "Caja {}: {}".format(self.id, self.nombre)
+    
+    

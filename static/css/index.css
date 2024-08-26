@@ -131,3 +131,22 @@ form button:hover {
     from { transform: translateY(-50px); }
     to { transform: translateY(0); }
 }
+
+#rewardModal .modal-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 80%;
+}
+
+#rewardModal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.caja.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
