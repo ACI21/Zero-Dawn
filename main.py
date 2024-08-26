@@ -61,7 +61,7 @@ def contador():
 @app.route('/')
 @login_required
 def index():
-    countdown_date = datetime.datetime(2023, 9, 15)
+    countdown_date = datetime.datetime(2024, 9, 15)
     if datetime.datetime.now() > countdown_date:
         cajas = Caja.query.all()
         print(f"Cajas recuperadas: {cajas}")  # Esto imprimirá las cajas en la consola
