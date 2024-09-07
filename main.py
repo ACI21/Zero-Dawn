@@ -92,7 +92,3 @@ def abrir_caja(caja_id):
     else:
         flash('Contraseña incorrecta')
         return jsonify({'success': False})
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
